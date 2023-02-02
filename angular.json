@@ -25,7 +25,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/pspdfkit/dist/pspdfkit-lib/",
+                "output": "./assets/pspdfkit-lib/"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -93,7 +98,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/pspdfkit/dist/pspdfkit-lib/",
+                "output": "./assets/pspdfkit-lib/"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -103,5 +113,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "0a6c7d0f-e98a-4b44-91e9-43ecb5ad29ed"
   }
 }
